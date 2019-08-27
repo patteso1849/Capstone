@@ -1,6 +1,4 @@
-<script>
-function myFunction() {
-  // Declare variables
+export default function myFunction() {
 var input, filter, ul, li, a, i, txtValue;
 input = document.getElementById('myInput');
 filter = input.value.toUpperCase();
@@ -17,5 +15,3 @@ li[i].style.display = "";
 li[i].style.display = "none";
     }
 }
-}
-</script>
