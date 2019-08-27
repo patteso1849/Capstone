@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Contact Me</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- <link rel="stylesheet" href="../styles.css" />
+ -->
+
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="About/">About</a></li>
+      <li><a href="Contact/">Contact</a></li>      
+    </ul>
+  </nav>
+
 
 <h2>Open Mic's in St. Louis City</h2>
 <h3>Search by typing</h3>
@@ -30,24 +60,49 @@
   <li><a href="#">Hartford Coffee Co<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Friday, night</p>
   </ul>
 
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+    
+      for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+          li[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+          li[i].style.display = "none";
         }
+      }
     }
-}
-</script>
+    </script>
+
+
+<footer>
+  <address>
+    <ul>
+      <li>
+        <a href="https://github.com/patteso1849" target="_blank">
+          <span class="fab fa-github-square"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/rc-patterson-a52626164/" target="_blank">
+          <span class="fab fa-linkedin"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com/" target="_blank">
+          <span class="fab fa-twitter"></span>
+        </a>
+      </li>
+    </ul>
+  </address>
+</footer>
+
 
 </body>
 </html>
